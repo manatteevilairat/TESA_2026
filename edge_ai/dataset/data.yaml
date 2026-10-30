@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 7
+names: ['Black', 'Broken', 'Empty', 'Good bean', 'Insect damage', 'Quaker', 'Scorched']
+
+roboflow:
+  workspace: coffee-beans-ixp8d
+  project: robusta-coffee-bean-defects-hatuw
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/coffee-beans-ixp8d/robusta-coffee-bean-defects-hatuw/dataset/2

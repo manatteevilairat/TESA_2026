@@ -1,0 +1,31 @@
+[project]
+name = "tesa-2026"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Manattee Vilairat", email = "6810110275@psu.ac.th" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.159.1",
+    "ollama>=0.6.3",
+    "onnx>=1.23.2",
+    "onnxruntime>=1.31.0",
+    "onnxslim>=0.1.98",
+    "opencv-python>=5.0.0.93",
+    "paho-mqtt>=2.1.0",
+    "pandas>=3.0.6",
+    "pydantic>=2.14.1",
+    "rich>=15.0.0",
+    "streamlit>=1.66.1",
+    "ultralytics>=8.4.183",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+tesa-2026 = "tesa_2026:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"

@@ -1,0 +1,13 @@
+# edge_ai/sample_dataset/data.yaml
+# บัตรประชาชนของ Dataset สำหรับบอก YOLO ว่ารูปภาพอยู่ที่ไหนและมี Class อะไรบ้าง
+
+path: /Users/sorn/TESA_2026/edge_ai/sample_dataset  # path หลักของ dataset
+train: images/train                                # โฟลเดอร์รูปสำหรับใช้ Train (ฝึก)
+val: images/val                                    # โฟลเดอร์รูปสำหรับใช้ Validation (สอบวัดผล)
+
+# รายชื่อ Class และรหัสตัวเลข (class_id เริ่มจาก 0)
+names:
+  0: healthy_bean   # เมล็ดกาแฟสมบูรณ์
+  1: black_bean     # เมล็ดดำ (ตำหนิรุนแรง)
+  2: mold_bean      # เมล็ดขึ้นรา (ตำหนิรุนแรง เสี่ยงสารพิษ)
+  3: broken_bean    # เมล็ดแตกหัก

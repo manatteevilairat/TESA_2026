@@ -1,0 +1,895 @@
+{
+  "batch_id": "CPN-2026-LIVE-DEMO",
+  "total_images": 62,
+  "total_beans_detected": 62,
+  "healthy_beans": 17,
+  "total_defects": 45,
+  "defect_rate_pct": 72.58,
+  "primary_defects_count": 25,
+  "secondary_defects_count": 20,
+  "grade": "REJECT",
+  "grade_description": "Off-Grade / Reject (Defect Exceeds Standard)",
+  "estimated_fair_price_thb": 65.0,
+  "class_breakdown": {
+    "Black": 8,
+    "Broken": 5,
+    "Empty": 2,
+    "Good bean": 17,
+    "Insect damage": 8,
+    "Quaker": 13,
+    "Scorched": 9
+  },
+  "average_latency_ms": 6.76,
+  "throughput_fps": 147.97,
+  "total_runtime_seconds": 0.51,
+  "detailed_images": [
+    {
+      "filename": "20240523174222473_jpg.rf.36b3384f08118d4dca0d5154d77332bd.jpg",
+      "latency_ms": 47.7,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 1
+      }
+    },
+    {
+      "filename": "20240523174914499_jpg.rf.2ec70196ede4cb7deb9aafa0e826fd78.jpg",
+      "latency_ms": 6.62,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 1,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523175416680_jpg.rf.6550725b2ec58b921f25a96f6122a3de.jpg",
+      "latency_ms": 5.95,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 1,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523175517465_jpg.rf.9f59ce6141ed44597bef9d79f5bda7b6.jpg",
+      "latency_ms": 5.95,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 1
+      }
+    },
+    {
+      "filename": "20240523180500544_jpg.rf.005229e66032520a45844a260f01384e.jpg",
+      "latency_ms": 5.77,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 1,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523180812128_jpg.rf.fa29943f1bf543d257848445aabd0072.jpg",
+      "latency_ms": 5.8,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 1,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523182318849_jpg.rf.101e73895d774a401d9ee6ea814ecbb9.jpg",
+      "latency_ms": 5.93,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 1,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523183650878_jpg.rf.1463cf8e9a26ab03e13941de66f5a418.jpg",
+      "latency_ms": 5.97,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 1,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523184757567_jpg.rf.9782f0749a4122f60f5c12e5f2679431.jpg",
+      "latency_ms": 5.79,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 1,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523185052724_jpg.rf.11bced5870a9641460e136aaf3a5852d.jpg",
+      "latency_ms": 5.92,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 1
+      }
+    },
+    {
+      "filename": "20240523185525902_jpg.rf.096d0b622b83d018c80608463528f2e5.jpg",
+      "latency_ms": 6.13,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 1,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523194346813_jpg.rf.60099737eb7937fffaf462b6d636075d.jpg",
+      "latency_ms": 6.01,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 1,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523194514807_jpg.rf.38e1a974724177670928cfbb43e8f231.jpg",
+      "latency_ms": 6.1,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 1,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523195340893_jpg.rf.c2a032638fc2430ab71715628e9dce31.jpg",
+      "latency_ms": 5.91,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 1,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523195519983_jpg.rf.4d8bccc290a386d5bad5528466583f98.jpg",
+      "latency_ms": 5.83,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 1,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523195537652_jpg.rf.273e3a3da26450205ed6eeb287d39bf0.jpg",
+      "latency_ms": 5.97,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 1,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523200230999_jpg.rf.0c6572aeb7a5d213ed7c7048956d8ea8.jpg",
+      "latency_ms": 5.85,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 1,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523200314856_jpg.rf.6a77b2c3953082c82dc6a30acdc547a8.jpg",
+      "latency_ms": 6.13,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 1,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523200403556_jpg.rf.204333359e38347aefddd351ba3f3115.jpg",
+      "latency_ms": 5.9,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 1,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523231346298_jpg.rf.f7b8c3b48e46e9fb82dad522400f74aa.jpg",
+      "latency_ms": 5.94,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 1,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523231408922_jpg.rf.4aba2840f97e3421e68c25872995a8da.jpg",
+      "latency_ms": 5.84,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 1,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523231659774_jpg.rf.c206f444e4b06ea6b265a5e325b7508b.jpg",
+      "latency_ms": 5.91,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 1,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523231718971_jpg.rf.3557751b06f5d76cf184e24232157d45.jpg",
+      "latency_ms": 5.96,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 1,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523232333885_jpg.rf.ffddac5223851063b59801afc723e585.jpg",
+      "latency_ms": 6.13,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 1,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523232634939_jpg.rf.7ecbc83a3dd484aa45b281154a989ccf.jpg",
+      "latency_ms": 6.1,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 1,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523232901520_jpg.rf.428462c57f8cfb687553792786487b2d.jpg",
+      "latency_ms": 6.26,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 1,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523233049090-2_jpg.rf.d5d686ac1a527daef56adeb500d85b20.jpg",
+      "latency_ms": 6.29,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 1,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523233839140_jpg.rf.5c7baddeeac68b6f75b2462b6e594ca5.jpg",
+      "latency_ms": 6.08,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 1,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523234054568_jpg.rf.2bad48e1a28621cd4f9fe17fabb7b5d8.jpg",
+      "latency_ms": 6.17,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 1,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240523234417124_jpg.rf.1b520ef120cc49b0a76e14fca45cca88.jpg",
+      "latency_ms": 6.1,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 1,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240524132720555_jpg.rf.1a33f303f0edc807a67ad6a32b0874c2.jpg",
+      "latency_ms": 6.18,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 1
+      }
+    },
+    {
+      "filename": "20240524132906332_jpg.rf.31e16325299d5e6de518c9fd9f93e0f1.jpg",
+      "latency_ms": 6.53,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 1,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240524133708887_jpg.rf.c895837a2701d52d72b655e6cf5cab12.jpg",
+      "latency_ms": 6.06,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 1,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240524140100038_jpg.rf.349ca4bc0d9fa9a420de2e6439556b7d.jpg",
+      "latency_ms": 5.88,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 1,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240524140520622_jpg.rf.bfdeda32742fffdf35183ab9d3d5880c.jpg",
+      "latency_ms": 6.02,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 1,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240524140648897_jpg.rf.7ba56f03ac398b1bd5d5391a515bf07a.jpg",
+      "latency_ms": 5.9,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 1,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240524141039503_jpg.rf.551c4150f3da75d246094e0887c47954.jpg",
+      "latency_ms": 5.87,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 1,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240524143827227_jpg.rf.89685cb04934695dd7668645de6b140b.jpg",
+      "latency_ms": 5.94,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 1,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240524144014606_jpg.rf.a546313eeb1d5e0ba857f5c79fc91fa3.jpg",
+      "latency_ms": 6.09,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 1,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240524144107604_jpg.rf.fc8f4d97b64683eda6ab97634d1830b4.jpg",
+      "latency_ms": 5.83,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 1,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240524144548138_jpg.rf.48d3a112226849bd1f9da825d54ce949.jpg",
+      "latency_ms": 5.9,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 1,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240524144804882_jpg.rf.f71172ca578300ffa82239e1ba0fabe6.jpg",
+      "latency_ms": 5.87,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 1,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240524145525242_jpg.rf.022e8465c28e6f9c568e57d87d713c61.jpg",
+      "latency_ms": 5.96,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 1,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240524145600078_jpg.rf.16b78f03856b7632c3f43541083e2612.jpg",
+      "latency_ms": 5.95,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 1,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240526103551154_jpg.rf.6c864da6fefbe8885f9e2234fe2eb861.jpg",
+      "latency_ms": 5.86,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 1,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240526103929639_jpg.rf.d826b90e024ff75e6dee83f404cc7c87.jpg",
+      "latency_ms": 5.85,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 1,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240526104858418_jpg.rf.e6a690a580b1fcdee9429b037eb49c41.jpg",
+      "latency_ms": 5.87,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 1
+      }
+    },
+    {
+      "filename": "20240526105043219_jpg.rf.56542dd2d79f38326fe4356e05671be3.jpg",
+      "latency_ms": 5.86,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 1
+      }
+    },
+    {
+      "filename": "20240526105447818_jpg.rf.9aac5258a5b6404e9104d20b670e729e.jpg",
+      "latency_ms": 5.77,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 1
+      }
+    },
+    {
+      "filename": "20240526122608679_jpg.rf.1a806e48eaf3ddc6cdaefec806ef42f6.jpg",
+      "latency_ms": 5.92,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 1,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240526123016634_jpg.rf.95377c0eda8f9e8803671bbc5c1729f9.jpg",
+      "latency_ms": 5.85,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 1
+      }
+    },
+    {
+      "filename": "20240526123057681_jpg.rf.de9aa5b99280846ffc4d6527279f6ea8.jpg",
+      "latency_ms": 5.85,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 1
+      }
+    },
+    {
+      "filename": "20240526123930838_jpg.rf.756ff45f8aeff4da10aabe1fa1907209.jpg",
+      "latency_ms": 5.91,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 1,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 0,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240526130106637_jpg.rf.6d4d0b17a7ea84d634870f5f05a1b871.jpg",
+      "latency_ms": 5.98,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 1,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240526130119361_jpg.rf.e84fe769554f94e9c10d8687bfbf08e9.jpg",
+      "latency_ms": 6.04,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 1,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240526130942283_jpg.rf.0593a1937c470a1df99f347c0f2c40b0.jpg",
+      "latency_ms": 5.83,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 1,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240526131042955_jpg.rf.8389a6a9c19fa7c5ca91cf7006026889.jpg",
+      "latency_ms": 6.26,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 1,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240526131056932_jpg.rf.f9d28ef1db43d7e0d1ea8716fc901a2e.jpg",
+      "latency_ms": 9.09,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 1,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240526131119206_jpg.rf.6c6be7dfb0d90104767b4e39e9de7d01.jpg",
+      "latency_ms": 8.79,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 1,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240526131359573_jpg.rf.aca4cc747c19b636ff768274774fefdd.jpg",
+      "latency_ms": 6.29,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 1,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240526132148400_jpg.rf.de8e7f5736bddf9b59726e455bffaf60.jpg",
+      "latency_ms": 6.08,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 1,
+        "Scorched": 0
+      }
+    },
+    {
+      "filename": "20240526132316330_jpg.rf.95b6e7a2329443bcd3f1a26d2b179041.jpg",
+      "latency_ms": 5.9,
+      "beans_detected": 1,
+      "counts": {
+        "Black": 0,
+        "Broken": 0,
+        "Empty": 0,
+        "Good bean": 0,
+        "Insect damage": 0,
+        "Quaker": 1,
+        "Scorched": 0
+      }
+    }
+  ]
+}
