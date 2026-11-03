@@ -19,3 +19,4 @@ env/
 # Run outputs, caches & heavy media files
 runs/
 *.vtt
+skills/
