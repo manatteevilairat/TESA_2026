@@ -20,3 +20,7 @@ env/
 runs/
 *.vtt
 skills/
+
+# Rust build target
+edge_rust/target/
+target/
