@@ -46,11 +46,11 @@ DHT dht(DHT_PIN, DHTTYPE);
 // 2. NETWORK & MQTT CONFIGURATION
 // ==============================================================================
 // หมายเหตุ: ปรับ SSID / Password ให้ตรงกับ Hotspot หรือเราเตอร์ทีม
-const char* WIFI_SSID       = "CoEIoT";
-const char* WIFI_PASSWORD   = "iot.coe.psu.ac.th";
+const char* WIFI_SSID       = "Sorn";
+const char* WIFI_PASSWORD   = "11333356";
 
 // IP ของคอมพิวเตอร์ที่รัน Mosquitto MQTT Broker ในวง LAN
-const char* MQTT_BROKER     = "172.30.81.107"; // ค่า Default หรือเปลี่ยนเป็น IP เครื่อง Mac
+const char* MQTT_BROKER     = "172.20.10.3"; // ค่า Default หรือเปลี่ยนเป็น IP เครื่อง Mac
 const int   MQTT_PORT       = 1883;
 
 const char* BATCH_ID        = "CPN-2026-B001";

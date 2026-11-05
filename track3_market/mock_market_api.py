@@ -10,6 +10,7 @@ Pure English interface without emojis.
 
 import sys
 import time
+import json
 import random
 from pathlib import Path
 from typing import Dict, List, Optional, Any
@@ -164,9 +165,44 @@ def get_market_status():
         "round_timestamp": time.time()
     }
 
+def sync_live_db_lots():
+    """Dynamically integrates real fused lots from ESP32 + RPi5 in shared/live_db.json."""
+    db_file = ROOT_DIR / "shared" / "live_db.json"
+    if not db_file.exists():
+        return
+    try:
+        with open(db_file, "r") as f:
+            data = json.load(f)
+        for batch_id, record in data.get("batches", {}).items():
+            sensor = record.get("latest_sensor")
+            vision = record.get("latest_vision")
+            if sensor and vision:
+                grade = vision.get("primary_grade", "COMMERCIAL_GRADE")
+                price_map = {"FINE_ROBUSTA": 320.0, "PREMIUM": 230.0, "COMMERCIAL_GRADE": 145.0, "REJECT": 65.0}
+                intrinsic = price_map.get(grade, 145.0)
+                defects = vision.get("defects", {})
+                pri = int(defects.get("black_beans", 0) + defects.get("mold_beans", 0))
+                sec = int(defects.get("broken_beans", 0) + defects.get("unripe_beans", 0))
+                
+                # Insert or update into inventory if available
+                if batch_id not in market_state["inventory"] or market_state["inventory"][batch_id].status == "AVAILABLE":
+                    market_state["inventory"][batch_id] = CoffeeLot(
+                        lot_id=batch_id,
+                        defect_rate_pct=float(vision.get("defect_rate_pct", 10.0)),
+                        moisture_pct=float(sensor.get("moisture_pct", 11.5)),
+                        primary_defects=pri,
+                        secondary_defects=sec,
+                        grade=grade,
+                        intrinsic_value_thb=intrinsic
+                    )
+    except Exception as e:
+        print(f"Notice: Failed to sync live db lots: {e}")
+
+
 @app.get("/api/market/inventory")
 def get_inventory():
     """Returns seller's available inventory lots and their physical metrics."""
+    sync_live_db_lots()
     available = [lot for lot in market_state["inventory"].values() if lot.status == "AVAILABLE"]
     return {
         "available_lots": available,
