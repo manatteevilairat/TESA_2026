@@ -266,6 +266,56 @@ def run_tournament(api_base: str, strategy: str = "asymmetric", rounds: int = 5)
         print(f"Failed to fetch final scoreboard: {e}")
 
 
+def get_strategic_bid(
+    lot: Dict[str, Any],
+    buyer: Dict[str, Any],
+    strategy: str = "asymmetric",
+    cleared_ratios: Optional[List[float]] = None
+) -> float:
+    """
+    1-Line Drop-In Strategic Bidding Calculator for Competition Day.
+    Designed for zero-friction integration with the organizer's starter agent on Nov 18.
+
+    Usage:
+        from track3_market.trading_agent import get_strategic_bid
+        bid_price = get_strategic_bid(lot, buyer, strategy="asymmetric")
+    """
+    intrinsic = float(
+        lot.get("intrinsic_value_thb") or
+        lot.get("cost_basis_thb") or
+        lot.get("reserve_price") or
+        lot.get("price") or 100.0
+    )
+    budget = float(
+        buyer.get("budget_max_thb") or
+        buyer.get("max_price") or
+        buyer.get("budget") or 250.0
+    )
+    headroom_ratio = budget / max(1.0, intrinsic)
+
+    if strategy == "asymmetric":
+        if intrinsic < 100.0:
+            target_multiplier = min(1.30, headroom_ratio * 0.92)
+        elif intrinsic < 200.0:
+            target_multiplier = min(1.18, headroom_ratio * 0.95)
+        else:
+            target_multiplier = min(1.12, headroom_ratio * 0.96)
+    elif strategy == "adaptive":
+        target_multiplier = 1.16
+    else:  # fixed
+        target_multiplier = 1.10
+
+    if cleared_ratios:
+        recent_avg = sum(cleared_ratios[-4:]) / len(cleared_ratios[-4:])
+        target_multiplier = min(target_multiplier, recent_avg * 1.05)
+
+    proposed = intrinsic * target_multiplier
+    # Safety Bounds: Never exceed buyer budget ceiling, never bid below cost basis
+    if budget < intrinsic:
+        return round(budget * 0.98, 2)
+    return round(min(max(proposed, intrinsic * 1.02), budget * 0.98), 2)
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="TGR2026 AI Coffee Trading Agent")
     parser.add_argument("--api", type=str, default=DEFAULT_API_BASE, help="Market API server URL")
