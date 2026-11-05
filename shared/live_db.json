@@ -1,5 +1,5 @@
 {
-  "last_updated": 1793098955.161597,
+  "last_updated": 1793794558.517039,
   "batches": {
     "CPN-2026-B002": {
       "batch_id": "CPN-2026-B002",
@@ -158,188 +158,207 @@
       "slm_eval": null,
       "asking_price_thb_per_kg": null,
       "is_listed_for_sale": false
+    },
+    "CPN-2026-B001": {
+      "batch_id": "CPN-2026-B001",
+      "farmer_name": "เกษตรกรชุมพรวิสาหกิจชุมชน",
+      "origin": "อ.สวี จ.ชุมพร",
+      "process_type": "Dry Process (Natural)",
+      "latest_sensor": {
+        "device_id": "esp32_sensing_01",
+        "batch_id": "CPN-2026-B001",
+        "timestamp": 1793794558.5162659,
+        "moisture_pct": 8.6,
+        "ambient_temp_c": 27.9,
+        "ambient_humidity_pct": 95.0,
+        "status": "DRYING_COMPLETE"
+      },
+      "latest_vision": null,
+      "slm_eval": null,
+      "asking_price_thb_per_kg": null,
+      "is_listed_for_sale": false
     }
   },
   "history": [
     {
-      "time": "17:30:59",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 47.8%"
+      "time": "19:14:31",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 12.6%, MOISTURE_HIGH"
     },
     {
-      "time": "17:31:00",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 50.0%"
+      "time": "19:14:34",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 12.5%, DRYING_NORMAL"
     },
     {
-      "time": "17:31:02",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 48.0%"
+      "time": "19:14:37",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 13.8%, MOISTURE_HIGH"
     },
     {
-      "time": "17:31:04",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 48.0%"
+      "time": "19:14:40",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 13.5%, MOISTURE_HIGH"
     },
     {
-      "time": "17:31:05",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 48.0%"
+      "time": "19:14:43",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 13.6%, MOISTURE_HIGH"
     },
     {
-      "time": "17:31:07",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 48.0%"
+      "time": "19:14:46",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 13.2%, MOISTURE_HIGH"
     },
     {
-      "time": "17:31:09",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 48.0%"
+      "time": "19:14:49",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 11.8%, DRYING_NORMAL"
     },
     {
-      "time": "17:31:10",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 48.0%"
+      "time": "19:14:52",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 8.6%, DRYING_COMPLETE"
     },
     {
-      "time": "17:31:12",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 48.0%"
+      "time": "19:14:55",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 8.6%, DRYING_COMPLETE"
     },
     {
-      "time": "17:31:14",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 48.0%"
+      "time": "19:14:58",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 8.6%, DRYING_COMPLETE"
     },
     {
-      "time": "17:31:15",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 48.0%"
+      "time": "19:15:01",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 8.6%, DRYING_COMPLETE"
     },
     {
-      "time": "17:31:17",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 48.0%"
+      "time": "19:15:04",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 8.6%, DRYING_COMPLETE"
     },
     {
-      "time": "17:31:19",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 48.0%"
+      "time": "19:15:07",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 8.6%, DRYING_COMPLETE"
     },
     {
-      "time": "17:31:20",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 48.0%"
+      "time": "19:15:10",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 8.6%, DRYING_COMPLETE"
     },
     {
-      "time": "17:31:22",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 52.0%"
+      "time": "19:15:13",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 8.6%, DRYING_COMPLETE"
     },
     {
-      "time": "17:31:24",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 52.0%"
+      "time": "19:15:16",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 8.6%, DRYING_COMPLETE"
     },
     {
-      "time": "17:31:25",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 52.0%"
+      "time": "19:15:19",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 8.6%, DRYING_COMPLETE"
     },
     {
-      "time": "17:31:27",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 52.0%"
+      "time": "19:15:22",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 8.6%, DRYING_COMPLETE"
     },
     {
-      "time": "17:31:29",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 52.0%"
+      "time": "19:15:25",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 8.6%, DRYING_COMPLETE"
     },
     {
-      "time": "17:31:30",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 52.0%"
+      "time": "19:15:28",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 8.6%, DRYING_COMPLETE"
     },
     {
-      "time": "17:31:32",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 52.0%"
+      "time": "19:15:31",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 8.6%, DRYING_COMPLETE"
     },
     {
-      "time": "17:31:34",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 48.0%"
+      "time": "19:15:34",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 8.6%, DRYING_COMPLETE"
     },
     {
-      "time": "17:31:35",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 44.0%"
+      "time": "19:15:37",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 8.6%, DRYING_COMPLETE"
     },
     {
-      "time": "17:31:37",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 40.0%"
+      "time": "19:15:40",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 8.6%, DRYING_COMPLETE"
     },
     {
-      "time": "17:31:39",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE",
-      "summary": "เกรด REJECT, ตำหนิ 36.0%"
+      "time": "19:15:43",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 8.6%, DRYING_COMPLETE"
     },
     {
-      "time": "16:38:49",
-      "source": "VISION",
-      "batch_id": "CPN-2026-ORGANIZER-TEST",
-      "summary": "เกรด REJECT, ตำหนิ 66.67%"
+      "time": "19:15:46",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 8.6%, DRYING_COMPLETE"
     },
     {
-      "time": "16:45:33",
-      "source": "VISION",
-      "batch_id": "CPN-2026-LIVE-DEMO",
-      "summary": "เกรด REJECT, ตำหนิ 72.58%"
+      "time": "19:15:49",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 8.6%, DRYING_COMPLETE"
     },
     {
-      "time": "17:45:15",
-      "source": "VISION",
-      "batch_id": "CPN-RPI4-WIFI",
-      "summary": "เกรด REJECT, ตำหนิ 72.58%"
+      "time": "19:15:52",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 8.6%, DRYING_COMPLETE"
     },
     {
-      "time": "18:00:40",
-      "source": "VISION",
-      "batch_id": "CPN-RPI4-WIFI",
-      "summary": "เกรด REJECT, ตำหนิ 72.58%"
+      "time": "19:15:55",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 8.6%, DRYING_COMPLETE"
     },
     {
-      "time": "18:02:35",
-      "source": "VISION",
-      "batch_id": "CPN-RPI4-WIFI",
-      "summary": "เกรด REJECT, ตำหนิ 72.58%"
+      "time": "19:15:58",
+      "source": "SENSOR",
+      "batch_id": "CPN-2026-B001",
+      "summary": "ความชื้น 8.6%, DRYING_COMPLETE"
     }
   ]
 }

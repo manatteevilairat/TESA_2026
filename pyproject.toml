@@ -1,10 +1,10 @@
 [project]
 name = "tesa-2026"
 version = "0.1.0"
-description = "Add your description here"
+description = "Chumphon Robusta AIoT Platform toward The Next-Gen Market (TESA Top Gun Rally 2026)"
 readme = "README.md"
 authors = [
-    { name = "Manattee Vilairat", email = "6810110275@psu.ac.th" }
+    { name = "Manattee Vilairat", email = "manattee.vilairat@gmail.com" }
 ]
 requires-python = ">=3.12"
 dependencies = [
@@ -23,9 +23,5 @@ dependencies = [
     "uvicorn>=0.54.0",
 ]
 
-[project.scripts]
-tesa-2026 = "tesa_2026:main"
-
-[build-system]
-requires = ["uv_build>=0.13.1,<0.14.0"]
-build-backend = "uv_build"
+[tool.uv]
+package = false

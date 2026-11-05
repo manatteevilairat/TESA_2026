@@ -16,11 +16,21 @@ env/
 *.swp
 .DS_Store
 
-# Run outputs, caches & heavy media files
+# Run outputs, caches & heavy weights
 runs/
 *.vtt
 skills/
+*.pt
+*.cache
+shared/latest_vision.jpg
 
 # Rust build target
 edge_rust/target/
 target/
+
+# PlatformIO build artifacts
+.pio/
+**/.pio/
+
+# Logs
+*.log

@@ -44,18 +44,19 @@
 
 ## 🏆 จุดเด่นสำคัญของแต่ละ Track (Key Highlights)
 
-### 🟢 Track 1: ESP32 Sensing Node (`esp32_firmware/`)
-* **ฮาร์ดแวร์:** ESP32 เชื่อมต่อ Wi-Fi และส่งข้อมูลผ่าน MQTT JSON Telemetry
-* **ฟังก์ชันการทำงาน:** อ่านค่า Analog (ADC), ควบคุม PWM, กรองสัญญาณ และคำนวณสอบเทียบ (Calibration) ความชื้นเมล็ดกาแฟตามมาตรฐานการส่งออก ($10.5\% - 12.5\%$)
+### 🟢 Track 1: ESP32 Sensing Node (`track1_esp32/`)
+* **ฮาร์ดแวร์:** รองรับทั้ง ESP32 WROOM-32 (ทดสอบในห้องแล็บ) และ ESP32-S3-N16R8 (บอร์ดเป้าหมายวันแข่ง)
+* **ฟังก์ชันการทำงาน:** อ่านค่า Analog (ADC1 ปลอดภัยเมื่อเปิด Wi-Fi), ควบคุมพัดลมด้วย PWM, กรองสัญญาณ 16-sample Moving Average, และคำนวณสอบเทียบความชื้นเมล็ดกาแฟตามมาตรฐานการส่งออก ($10.5\% - 12.5\%$)
+* **การเชื่อมต่อ:** Wi-Fi Non-blocking State Machine ส่ง JSON Telemetry ผ่าน Mosquitto MQTT Broker
 
-### 🟢 Track 2: Edge AI on Raspberry Pi 5 (`edge_ai/`)
+### 🟢 Track 2: Edge AI on Raspberry Pi 5 (`track2_edge_ai/`)
 * **โมเดล AI:** YOLOv8n fine-tuned บน 7 คลาสทางการของ สจล. ชุมพร (`Good bean`, `Black`, `Broken`, `Empty`, `Insect damage`, `Quaker`, `Scorched`)
 * **Zero-Torch Pure ONNX Runtime:** ออกแบบให้รันตรงบน CPU Multi-threading (4 Threads) โดยไม่ต้องติดตั้ง PyTorch หรือ CUDA ให้หนักเครื่อง
 * **สคริปต์ Batch Evaluation (`batch_eval.py`):** ประมวลผลโฟลเดอร์ภาพ Private Test Set ของกรรมการรวดเดียว ตีกรอบ นับเมล็ด คัดแยก Primary vs Secondary Defects และตัดเกรดกาแฟอัตโนมัติ (`Fine Robusta`, `Premium`, `Commercial`, `Reject`)
 * **1-Click Remote Deployment (`deploy_to_rpi.py`):** สั่งยิงโมเดลและโค้ดเข้า Raspberry Pi 5 ผ่านเครือข่ายภายใน 2 วินาที
 
-### 🟢 Track 3: The Next-Gen Market & AI Agent (`market_platform/`)
-* **สถาปัตยกรรม Agent (ดู $\rightarrow$ คิด $\rightarrow$ ทำ):** ดึงข้อมูลความต้องการของผู้ซื้อในตลาด (Specialty Roaster, Commercial Factory, Instant Powder Processor) ผ่าน REST API
+### 🟢 Track 3: The Next-Gen Market & AI Agent (`track3_market/`)
+* **สถาปัตยกรรม Agent (ดู $\rightarrow$ คิด $\rightarrow$ ทำ $\rightarrow$ ปรับ):** ศึกษารายละเอียดเต็มใน [`AGENT.md`](file:///Users/sorn/TESA_2026/AGENT.md)
 * **กลยุทธ์ประมูลแชมป์ (Smart Asymmetric + Adaptive):**
   * *กาแฟเกรดต่ำ (Reject/Off-grade):* งบโรงงาน Instant มีสูง ดันมาร์จิ้นได้ถึง $+25\% - 35\%$ เพื่อกอบโกยคะแนน Value Surplus
   * *กาแฟพรีเมียม (Fine Robusta):* เพดานงบโรงคั่วแคบ ตั้งราคาแบบรัดกุม $+10\% - 12\%$ เพื่อการันตีชนะประมูล
@@ -86,25 +87,26 @@
 
 ---
 
-## 📁 โครงสร้างไฟล์ในโปรเจกต์ (Clean Repository Structure)
+## 📁 โครงสร้างไดเรกทอรีของโปรเจกต์ (Project Directory Structure)
 
 ```text
 TESA_2026/
-├── check_competition_readiness.py  # สคริปต์ตรวจความพร้อมทั้งระบบในคำสั่งเดียว
-├── mosquitto.conf                   # ค่าคอนฟิก MQTT Broker สำหรับรับส่งข้อมูลในวง LAN
-├── pyproject.toml                   # รายการ Dependencies หลักของโปรเจกต์
-├── yolov8n.pt                       # สถาปัตยกรรมตั้งต้นสำหรับ Fine-tune หน้างาน
-├── SYSTEM_OVERVIEW.md               # รายละเอียดเชิงลึกของระบบและข้อกำหนดทางเทคนิค
-├── ULTIMATE_PREPARATION_CHECKLIST.md # เช็คลิสต์ตรวจสอบอุปกรณ์และการเตรียมความพร้อม
+├── AGENT.md                         # กติกาและสถาปัตยกรรม Track 3 AI Trading Agent
+├── README.md                        # คู่มือภาพรวมโปรเจกต์
+├── pyproject.toml / uv.lock         # ตัวกำหนด Dependencies แบบล็อกเวอร์ชันเป๊ะ 100%
 │
-├── 📁 edge_ai/                      # โมดูล Edge AI สำหรับ Raspberry Pi
+├── 📁 track1_esp32/                 # [Track 1] ซอร์สโค้ดเฟิร์มแวร์ ESP32 (PlatformIO)
+│   ├── platformio.ini               # ตั้งค่าบอร์ดคู่ (ESP32 WROOM-32 & S3-N16R8)
+│   └── src/main.cpp                 # โค้ดเซ็นเซอร์ ADC/DHT, กรองสัญญาณ, ควบคุม PWM & MQTT
+│
+├── 📁 track2_edge_ai/               # [Track 2] โมดูล Edge AI สำหรับ Raspberry Pi 5
 │   ├── batch_eval.py                # Pipeline สแกนตรวจภาพทั้งโฟลเดอร์ + ส่ง MQTT
 │   ├── train_yolo.py                # สคริปต์เทรนโมเดลด่วนบน Mac/PC + Auto-export ONNX
 │   ├── deploy_to_rpi.py             # เครื่องมือส่งโมเดลเข้าบอร์ด Pi ข้าม Wi-Fi ใน 2 วินาที
 │   ├── vision_engine.py             # เอนจินประมวลผลภาพ 7 คลาสและคิดเกรด SCA
-│   └── models/coffee_best.onnx      # โมเดล ONNX น้ำหนักเบาสำหรับรันบน Pi
+│   └── models/coffee_best.onnx      # โมเดล ONNX น้ำหนักเบาสำหรับรันบน CPU
 │
-├── 📁 market_platform/              # โมดูลตลาด Next-Gen Market และ Web Platform
+├── 📁 track3_market/                # [Track 3] โมดูลตลาด Next-Gen Market และ Web Platform
 │   ├── app.py                       # แดชบอร์ดหลัก 4 แท็บ (Streamlit)
 │   ├── backend_service.py           # บริการ Data Fusion ดักฟัง MQTT บันทึกลง live_db
 │   ├── trading_agent.py             # ตัวบอท AI แข่งขันประมูลปิดซองในตลาด
@@ -117,9 +119,13 @@ TESA_2026/
 │   ├── config.py                    # ตรวจจับ IP ในวง LAN อัตโนมัติและจัดการค่าคอนฟิก
 │   └── live_db.json                 # ฐานข้อมูล JSON กลางสำหรับแลกเปลี่ยนข้อมูล
 │
-└── 📁 esp32_firmware/               # ซอร์สโค้ดเฟิร์มแวร์ ESP32 (PlatformIO)
-    ├── platformio.ini               # การตั้งค่าบอร์ดและไลบรารี
-    └── src/main.cpp                 # โค้ดอ่านเซ็นเซอร์ กรองสัญญาณ และเชื่อมต่อ MQTT
+├── 📁 tests/                        # ชุดตรวจสอบความพร้อมของระบบ
+│   └── check_readiness.py           # Master 1-Click Diagnostics
+│
+└── 📁 docs/                         # เอกสารสรุปและสถิติการเตรียมตัว
+    ├── project_status_update.md     # บันทึกสถานะโปรเจกต์ 100% ครบทุกแทร็ก
+    ├── system_overview.md           # สรุปสถาปัตยกรรมและแผนภาพระบบ
+    └── preparation_checklist.md     # เช็กลิสต์ความพร้อมก่อนวันแข่งจริง
 ```
 
 ---
@@ -133,22 +139,22 @@ TESA_2026/
 git clone https://github.com/manatteevilairat/TESA_2026.git
 cd TESA_2026
 
-# ซิงค์ Dependencies อัตโนมัติ
+# ซิงค์ Dependencies อัตโนมัติ (ได้เวอร์ชันเดียวกันเป๊ะ 100%)
 uv sync
 ```
 
 ### 2. ตรวจสอบความพร้อมของระบบทั้งหมด (1-Click Diagnostics)
 ```bash
-uv run python check_competition_readiness.py
+uv run python tests/check_readiness.py
 ```
 
 ### 3. เปิดใช้งานแดชบอร์ดหลัก (Streamlit Platform)
 ```bash
 # Terminal 1: เปิดบริการเชื่อมต่อข้อมูล MQTT Backend
-uv run python market_platform/backend_service.py
+uv run python track3_market/backend_service.py
 
 # Terminal 2: เปิดหน้าเว็บแดชบอร์ด
-uv run streamlit run market_platform/app.py
+uv run streamlit run track3_market/app.py
 ```
 *เข้าใช้งานผ่านเบราว์เซอร์ที่ `http://localhost:8501`*
 
@@ -156,8 +162,8 @@ uv run streamlit run market_platform/app.py
 ```bash
 # บนบอร์ด Raspberry Pi 5
 cd ~/TESA_2026
-uv run --no-project edge_ai/batch_eval.py \
-  --input-dir edge_ai/dataset/test/images \
+uv run --no-project track2_edge_ai/batch_eval.py \
+  --input-dir track2_edge_ai/dataset/test/images \
   --batch-id CPN-RPI5-CHAMPION \
   --broker <IP_เครื่อง_MAC> \
   --publish-mqtt
@@ -166,10 +172,10 @@ uv run --no-project edge_ai/batch_eval.py \
 ### 5. ซ้อมแข่งขัน AI Trading Agent (Track 3)
 ```bash
 # Terminal 1: เปิดเซิร์ฟเวอร์ตลาดจำลอง
-uv run python market_platform/mock_market_api.py
+uv run python track3_market/mock_market_api.py
 
 # Terminal 2: ปล่อย AI Agent ลงแข่งประมูล 5 รอบด้วยกลยุทธ์ Asymmetric
-uv run python market_platform/trading_agent.py --strategy asymmetric --rounds 5
+uv run python track3_market/trading_agent.py --strategy asymmetric --rounds 5
 ```
 
 ---

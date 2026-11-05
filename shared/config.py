@@ -11,10 +11,13 @@ from typing import Dict, Any
 
 ROOT_DIR = Path(__file__).resolve().parent.parent
 SHARED_DIR = ROOT_DIR / "shared"
-EDGE_AI_DIR = ROOT_DIR / "edge_ai"
-MODELS_DIR = EDGE_AI_DIR / "models"
-DATASET_DIR = EDGE_AI_DIR / "dataset"
-MARKET_DIR = ROOT_DIR / "market_platform"
+TRACK1_DIR = ROOT_DIR / "track1_esp32"
+TRACK2_DIR = ROOT_DIR / "track2_edge_ai"
+EDGE_AI_DIR = TRACK2_DIR  # Alias for backward compatibility
+MODELS_DIR = TRACK2_DIR / "models"
+DATASET_DIR = TRACK2_DIR / "dataset"
+TRACK3_DIR = ROOT_DIR / "track3_market"
+MARKET_DIR = TRACK3_DIR  # Alias for backward compatibility
 
 def get_local_ip() -> str:
     """Attempts to discover the machine's primary local LAN IP address."""
